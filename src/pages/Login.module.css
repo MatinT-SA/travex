@@ -24,3 +24,13 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+
+.button {
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--0);
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
