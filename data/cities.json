@@ -37,28 +37,28 @@
       "id": 50505050
     },
     {
-      "cityName": "Tokyo",
-      "country": "Japan",
-      "emoji": "🇯🇵",
-      "date": "2027-08-22T09:55:33.567Z",
-      "notes": "A futuristic city with deep traditions.",
+      "cityName": "Tehran",
+      "country": "Iran",
+      "emoji": "🇮🇷",
+      "date": "2027-11-05T12:30:45.238Z",
+      "notes": "The heart of Iran with amazing history!",
       "position": {
-        "lat": 35.6895,
-        "lng": 139.6917
+        "lat": 35.6892,
+        "lng": 51.389
       },
-      "id": 70707070
+      "id": 10101010
     },
     {
-      "cityName": "Cape Town",
-      "country": "South Africa",
-      "emoji": "🇿🇦",
-      "date": "2027-03-14T07:25:48.901Z",
-      "notes": "One of the most scenic cities in the world.",
+      "cityName": "Geneva",
+      "country": "Switzerland",
+      "emoji": "🇨🇭",
+      "date": "2027-09-10T16:20:11.784Z",
+      "notes": "A global city with breathtaking views.",
       "position": {
-        "lat": -33.9249,
-        "lng": 18.4241
+        "lat": 46.2044,
+        "lng": 6.1432
       },
-      "id": 80808080
+      "id": 40404040
     }
   ]
 }
