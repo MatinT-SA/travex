@@ -7,6 +7,7 @@ import Button from "./Button";
 import { useNavigate } from "react-router-dom";
 import BackButton from "./BackButton";
 import { useUrlPosition } from "../hooks/useUrlPosition";
+import { Message } from "./Message";
 
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
@@ -26,6 +27,7 @@ function Form() {
   const [notes, setNotes] = useState("");
   const [isLoadingGeocoding, setIsLoadingGeocoding] = useState(false);
   const [emoji, setEmoji] = useState("");
+  const [geocodingError, setGeocodingError] = useState("");
 
   useEffect(() => {
     async function fetchCityData() {
@@ -33,16 +35,22 @@ function Form() {
         setIsLoadingGeocoding(true);
         const res = await fetch(`${BASE_URL}?latitude=${lat}&longitude=${lng}`);
         const data = await res.json();
+
+        if (!data.countryCode) throw new Error("You haven't clicked on a city");
+
         setCityName(data.city || data.locality || "");
         setCountry(data.countryName || "");
         setEmoji(convertToEmoji(data.countryCode));
       } catch (error) {
+        setGeocodingError(error.message);
       } finally {
         setIsLoadingGeocoding(false);
       }
     }
     fetchCityData();
   }, [lat, lng]);
+
+  if (geocodingError) return <Message message={geocodingError} />;
 
   return (
     <form className={styles.form}>
