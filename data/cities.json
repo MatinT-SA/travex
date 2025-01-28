@@ -25,18 +25,6 @@
       "id": 30303030
     },
     {
-      "cityName": "Brussels",
-      "country": "Belgium",
-      "emoji": "🇧🇪",
-      "date": "2027-07-30T11:10:55.657Z",
-      "notes": "EU capital with a rich history.",
-      "position": {
-        "lat": 50.8503,
-        "lng": 4.3517
-      },
-      "id": 50505050
-    },
-    {
       "cityName": "Tehran",
       "country": "Iran",
       "emoji": "🇮🇷",
@@ -59,6 +47,18 @@
         "lng": 6.1432
       },
       "id": 40404040
+    },
+    {
+      "cityName": "Brussels",
+      "date": "2025-01-28T15:10:04.278Z",
+      "notes": "test",
+      "emoji": "🇧🇪",
+      "country": "Belgium",
+      "position": {
+        "lat": "50.830228205617445",
+        "lng": "4.350585937500001"
+      },
+      "id": 2039121832
     }
   ]
 }
