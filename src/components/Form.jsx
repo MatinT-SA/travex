@@ -1,6 +1,8 @@
 // "https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=0&longitude=0"
 
 import { useEffect, useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 import styles from "./Form.module.css";
 import Button from "./Button";
@@ -9,6 +11,7 @@ import BackButton from "./BackButton";
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import { Message } from "./Message";
 import Spinner from "./Spinner";
+import { useCities } from "../contexts/CitiesContext";
 
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
@@ -21,6 +24,8 @@ export function convertToEmoji(countryCode) {
 }
 
 function Form() {
+  const { createCity } = useCities();
+
   const [lat, lng] = useUrlPosition();
   const [cityName, setCityName] = useState("");
   const [country, setCountry] = useState("");
@@ -53,6 +58,24 @@ function Form() {
     fetchCityData();
   }, [lat, lng]);
 
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    if (!cityName && !date) return;
+
+    const newCity = {
+      cityName,
+      date,
+      notes,
+      emoji,
+      country,
+      position: { lat, lng },
+    };
+
+    createCity(newCity);
+    // navigate(`/city/${newCity.id}`);
+  }
+
   if (isLoadingGeocoding) return <Spinner />;
 
   if (!lat && !lng) return <Message message="Click somewhere on the map" />;
@@ -60,7 +83,7 @@ function Form() {
   if (geocodingError) return <Message message={geocodingError} />;
 
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
         <input
@@ -73,10 +96,12 @@ function Form() {
 
       <div className={styles.row}>
         <label htmlFor="date">When did you go to {cityName}?</label>
-        <input
+
+        <DatePicker
+          onChange={(date) => setDate(date)}
+          selected={date}
+          dateFormat="yyyy/mm/dd"
           id="date"
-          onChange={(e) => setDate(e.target.value)}
-          value={date}
         />
       </div>
 

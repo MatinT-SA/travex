@@ -59,6 +59,42 @@
         "lng": 6.1432
       },
       "id": 40404040
+    },
+    {
+      "cityName": "Anarak",
+      "date": "2025-01-28T13:50:43.788Z",
+      "notes": "test\n",
+      "emoji": "🇮🇷",
+      "country": "Iran (Islamic Republic of)",
+      "position": {
+        "lat": "32.99023555965106",
+        "lng": "53.76708984375001"
+      },
+      "id": 2039121832
+    },
+    {
+      "cityName": "Konstancin-Jeziorna",
+      "date": "2025-01-28T13:53:12.299Z",
+      "notes": "polska",
+      "emoji": "🇵🇱",
+      "country": "Poland",
+      "position": {
+        "lat": "52.078059907235335",
+        "lng": "21.093750000000004"
+      },
+      "id": 2039121833
+    },
+    {
+      "cityName": "Madona",
+      "date": "2025-01-28T13:54:29.126Z",
+      "notes": "alright",
+      "emoji": "🇱🇻",
+      "country": "Latvia",
+      "position": {
+        "lat": "56.68037378950137",
+        "lng": "26.367187500000004"
+      },
+      "id": 2039121834
     }
   ]
 }
