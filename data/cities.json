@@ -95,6 +95,30 @@
         "lng": "26.367187500000004"
       },
       "id": 2039121834
+    },
+    {
+      "cityName": "Riyadh",
+      "date": "2025-01-28T13:58:12.162Z",
+      "notes": "Riyadh",
+      "emoji": "🇸🇦",
+      "country": "Saudi Arabia",
+      "position": {
+        "lat": "24.607069137709708",
+        "lng": "47.02148437500001"
+      },
+      "id": 2039121835
+    },
+    {
+      "cityName": "Wellington",
+      "date": "2025-01-28T14:00:38.424Z",
+      "notes": "Sheida",
+      "emoji": "🇳🇿",
+      "country": "New Zealand",
+      "position": {
+        "lat": "-41.28373898340902",
+        "lng": "174.7742133398972"
+      },
+      "id": 2039121836
     }
   ]
 }
