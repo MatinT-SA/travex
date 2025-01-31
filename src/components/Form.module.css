@@ -1,5 +1,5 @@
 .form {
-  background-color: var(--color-dark--2);
+  background-color: var(--color-purple--1);
   border-radius: 7px;
   padding: 2rem 3rem;
   width: 100%;
@@ -35,7 +35,7 @@
   pointer-events: none;
   background-color: var(--color-light--1);
   border: 1px solid var(--color-light--1);
-  color: var(--color-dark--0);
+  color: var(--color-purple--2);
 }
 
 :global(.react-datepicker) {

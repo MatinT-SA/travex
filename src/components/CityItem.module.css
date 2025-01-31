@@ -5,10 +5,14 @@
   gap: 1.6rem;
   align-items: center;
 
-  background-color: var(--color-dark--2);
+  background: linear-gradient(
+    to right,
+    var(--color-purple--2),
+    var(--color-purple--2)
+  );
   border-radius: 7px;
   padding: 1rem 2rem;
-  border-left: 5px solid var(--color-brand--2);
+  border-left: 5px solid var(--color-brand--1);
   cursor: pointer;
 
   color: inherit;
@@ -16,8 +20,8 @@
 }
 
 .cityItem--active {
-  border: 2px solid var(--color-brand--2);
-  border-left: 5px solid var(--color-brand--2);
+  border: 2px solid var(--color-purple--2);
+  border-left: 5px solid var(--color-purple--2);
 }
 
 .emoji {

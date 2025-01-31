@@ -1,7 +1,12 @@
 .city {
   padding: 2rem 3rem;
   max-height: 70%;
-  background-color: var(--color-dark--2);
+  background: linear-gradient(
+    to right,
+    var(--color-purple--1),
+    var(--color-purple--2)
+  );
+
   border-radius: 7px;
   overflow: none;
 

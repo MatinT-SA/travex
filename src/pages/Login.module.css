@@ -6,7 +6,7 @@
 }
 
 .form {
-  background-color: var(--color-dark--2);
+  background-color: var(--color-purple--1);
   border-radius: 7px;
   padding: 2rem 3rem;
   width: 100%;
@@ -27,7 +27,7 @@
 
 .button {
   background-color: var(--color-brand--2);
-  color: var(--color-dark--0);
+  color: var(--color-purple--2);
   padding: 1rem 2rem;
   border-radius: 7px;
   text-transform: uppercase;

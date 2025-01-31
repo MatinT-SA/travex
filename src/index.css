@@ -10,15 +10,18 @@
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
 
 :root {
-  --color-brand--1: #ffb545;
-  --color-brand--2: #00c46a;
+  --color-brand--1: #5e005e;
+  --color-brand--2: #009dff;
+  --color-purple--1: #6a1b9a;
+  --color-purple--2: #9c27b0;
 
-  --color-dark--0: #242a2e;
-  --color-dark--1: #2d3439;
-  --color-dark--2: #42484d;
-  --color-light--1: #aaa;
-  --color-light--2: #ececec;
-  --color-light--3: #d6dee0;
+  --color-dark--0: #443cac;
+  --color-dark--1: #272c30;
+  --color-dark--2: #042d45;
+
+  --color-light--1: #b0bec5;
+  --color-light--2: #f0f4f8;
+  --color-light--3: #dceff9;
 }
 
 * {

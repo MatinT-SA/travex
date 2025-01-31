@@ -6,7 +6,7 @@
 .nav ul {
   list-style: none;
   display: flex;
-  background-color: var(--color-dark--2);
+  background-color: var(--color-purple--1);
   border-radius: 7px;
 }
 
@@ -24,5 +24,5 @@
 
 /* CSS Modules feature */
 .nav a:global(.active) {
-  background-color: var(--color-dark--0);
+  background-color: var(--color-purple--2);
 }

@@ -7,7 +7,11 @@
   font-size: 1.7rem;
   font-weight: 600;
 
-  background-color: var(--color-dark--2);
+  background: linear-gradient(
+    to right,
+    var(--color-purple--2),
+    var(--color-purple--2)
+  );
   border-radius: 7px;
   padding: 1rem 2rem;
   border-left: 5px solid var(--color-brand--1);
