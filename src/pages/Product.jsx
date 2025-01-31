@@ -8,7 +8,7 @@ export default function Product() {
 
       <section>
         <img
-          src="img-1.jpg"
+          src="images/img-1.jpg"
           alt="person with dog overlooking mountain with sunset"
         />
         <div>
