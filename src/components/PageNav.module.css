@@ -20,7 +20,6 @@
   font-weight: 600;
 }
 
-/* CSS Modules feature */
 .nav a:global(.active) {
   color: var(--color-brand--2);
 }
@@ -28,7 +27,11 @@
 a.ctaLink:link,
 a.ctaLink:visited {
   background-color: var(--color-brand--2);
-  color: var(--color-purple--2);
+  color: white;
   padding: 0.8rem 2rem;
   border-radius: 7px;
+}
+
+a.ctaLink:global(.active) {
+  background-color: var(--color-purple--1);
 }
