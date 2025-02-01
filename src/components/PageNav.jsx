@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Hamburger from "hamburger-react";
-import styles from "./PageNav.module.css"; // Ensure correct path
+import styles from "./PageNav.module.css";
 import Logo from "./Logo";
 
 const PageNav = () => {
@@ -11,12 +11,10 @@ const PageNav = () => {
     <nav className={styles.nav}>
       <Logo />
 
-      {/* Hamburger Icon */}
       <div className={styles.hamburgerIcon}>
         <Hamburger toggled={isOpen} toggle={setIsOpen} />
       </div>
 
-      {/* Sliding Navigation Menu */}
       <ul className={`${styles.navList} ${isOpen ? styles.open : ""}`}>
         <li>
           <NavLink to="/" onClick={() => setIsOpen(false)}>
