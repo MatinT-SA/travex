@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Hamburger from "hamburger-react";
 import styles from "./PageNav.module.css";
 import Logo from "./Logo";
 
 const PageNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
   return (
     <nav className={styles.nav}>
       <Logo />
 
-      <ul>
+      <div className={styles.hamburgerIcon}>
+        <Hamburger toggled={isOpen} toggle={toggleMenu} />
+      </div>
+
+      <ul className={`${styles.navList} ${isOpen ? styles.open : ""}`}>
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
