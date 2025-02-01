@@ -12,17 +12,18 @@ export default function Product() {
           alt="person with dog overlooking mountain with sunset"
         />
         <div>
-          <h2>About WorldWide.</h2>
+          <h2>Explore with Travex</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo est
-            dicta illum vero culpa cum quaerat architecto sapiente eius non
-            soluta, molestiae nihil laborum, placeat debitis, laboriosam at fuga
-            perspiciatis?
+            With Travex, selecting the places you’ve been has never been easier
+            or more visually stunning. The interactive map allows you to simply
+            click on any location you’ve traveled to, and watch your journey
+            unfold in a sleek, modern interface.
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            doloribus libero sunt expedita ratione iusto, magni, id sapiente
-            sequi officiis et.
+            All your destinations are neatly organized by country and city,
+            making it a breeze to navigate through your travels. Click on any
+            city to dive deeper into your experiences, where you’ll find travel
+            dates, personal notes, and more details about your adventures.
           </p>
         </div>
       </section>

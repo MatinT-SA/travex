@@ -9,15 +9,10 @@ export default function Product() {
 
       <section>
         <div>
-          <h2>
-            Simple pricing.
-            <br />
-            Just $9/month.
-          </h2>
+          <h2>Affordable Plans for Every Traveler</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel
-            labore mollitia iusto. Recusandae quos provident, laboriosam fugit
-            voluptatem iste.
+            Choose the plan that fits your journey and unlock the full potential
+            of Travex to track every destination you've explored on the map.
           </p>
         </div>
         <img
