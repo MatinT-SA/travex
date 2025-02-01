@@ -33,3 +33,20 @@
   color: var(--color-light--1);
   margin-bottom: 2.5rem;
 }
+
+@media (max-width: 550px) {
+  .homepage h1 {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .homepage h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .homepage {
+    padding: 1.5rem 2.5rem;
+  }
+}
