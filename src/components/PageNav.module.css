@@ -49,9 +49,8 @@ a.ctaLink:global(.active) {
 .navList.open {
   display: flex;
   position: absolute;
-  top: 70px;
-  left: 0;
-  right: 0;
+  top: 4rem;
+  right: 4rem;
   background-color: var(--color-dark--1);
   text-align: center;
   padding: 2rem;
