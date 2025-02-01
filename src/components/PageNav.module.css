@@ -39,6 +39,9 @@ a.ctaLink:global(.active) {
 
 .hamburgerIcon {
   display: none;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
 }
 
 .navList {
@@ -48,27 +51,66 @@ a.ctaLink:global(.active) {
 
 .navList.open {
   display: flex;
-  position: absolute;
-  top: 4rem;
-  right: 4rem;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
   background-color: var(--color-dark--1);
   text-align: center;
   padding: 2rem;
   flex-direction: column;
   z-index: 1000;
+  gap: 6rem;
+}
+
+@keyframes slideIn {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    right: 0;
+  }
+  to {
+    right: -100%;
+  }
 }
 
 @media (max-width: 700px) {
   .hamburgerIcon {
     display: block;
     cursor: pointer;
+    z-index: 1001;
   }
 
   .nav ul {
     display: none;
   }
 
+  .navList {
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--color-dark--1);
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 6rem;
+    z-index: 1000;
+  }
+
   .navList.open {
-    display: flex;
+    animation: slideIn 0.5s forwards;
+  }
+
+  .navList.closing {
+    animation: slideOut 0.5s forwards;
   }
 }
