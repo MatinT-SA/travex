@@ -41,6 +41,11 @@ body {
   line-height: 1.6;
 }
 
+#favicon {
+  width: 20px;
+  height: 20px;
+}
+
 label {
   font-size: 1.6rem;
   font-weight: 600;

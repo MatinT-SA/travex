@@ -1,64 +1,52 @@
 {
   "cities": [
     {
-      "cityName": "Shahriar",
-      "date": "2025-02-02T16:35:00.610Z",
-      "notes": "",
-      "emoji": "🇮🇷",
-      "country": "Iran (Islamic Republic of)",
-      "position": {
-        "lat": "35.676972764481974",
-        "lng": "51.1083984375"
-      },
-      "id": 1
-    },
-    {
-      "cityName": "Khur",
-      "date": "2025-02-02T16:35:03.955Z",
-      "notes": "",
-      "emoji": "🇮🇷",
-      "country": "Iran (Islamic Republic of)",
-      "position": {
-        "lat": "33.89103504911059",
-        "lng": "55.32714843750001"
-      },
-      "id": 2
-    },
-    {
-      "cityName": "Buin va Miandasht",
-      "date": "2025-02-02T16:35:06.923Z",
-      "notes": "",
-      "emoji": "🇮🇷",
-      "country": "Iran (Islamic Republic of)",
-      "position": {
-        "lat": "33.06602094102035",
-        "lng": "50.20751953125"
-      },
-      "id": 3
-    },
-    {
-      "cityName": "Nik Pey",
-      "date": "2025-02-02T16:39:41.941Z",
-      "notes": "",
-      "emoji": "🇮🇷",
-      "country": "Iran (Islamic Republic of)",
-      "position": {
-        "lat": "36.96885356043026",
-        "lng": "47.50488281250001"
-      },
-      "id": 4
-    },
-    {
-      "cityName": "Bismil",
-      "date": "2025-02-02T16:39:46.706Z",
+      "cityName": "Nizip",
+      "date": "2025-02-02T17:22:13.019Z",
       "notes": "",
       "emoji": "🇹🇷",
       "country": "Turkiye",
       "position": {
-        "lat": "38.03219106928443",
-        "lng": "40.64941406250001"
+        "lat": "37.12621684225905",
+        "lng": "37.72705078125001"
       },
-      "id": 5
+      "id": 1
+    },
+    {
+      "cityName": "Dereli",
+      "date": "2025-02-02T17:22:22.979Z",
+      "notes": "",
+      "emoji": "🇹🇷",
+      "country": "Turkiye",
+      "position": {
+        "lat": "40.48172833485718",
+        "lng": "38.34228515625001"
+      },
+      "id": 2
+    },
+    {
+      "cityName": "Zelenogorskoye",
+      "date": "2025-02-02T17:22:24.958Z",
+      "notes": "",
+      "emoji": "🇺🇦",
+      "country": "Ukraine",
+      "position": {
+        "lat": "45.05820517608334",
+        "lng": "34.51904296875001"
+      },
+      "id": 3
+    },
+    {
+      "cityName": "Ciochina",
+      "date": "2025-02-02T17:22:27.723Z",
+      "notes": "",
+      "emoji": "🇷🇴",
+      "country": "Romania",
+      "position": {
+        "lat": "44.592172455172374",
+        "lng": "27.026367187500004"
+      },
+      "id": 4
     }
   ]
 }
