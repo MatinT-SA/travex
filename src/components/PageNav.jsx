@@ -17,24 +17,36 @@ const PageNav = () => {
 
       <ul className={`${styles.navList} ${isOpen ? styles.open : ""}`}>
         <li>
-          <NavLink to="/" onClick={() => setIsOpen(false)}>
+          <NavLink
+            to="/"
+            onClick={() => setIsOpen(false)}
+            className={styles.navLink}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/pricing" onClick={() => setIsOpen(false)}>
+          <NavLink
+            to="/pricing"
+            onClick={() => setIsOpen(false)}
+            className={styles.navLink}
+          >
             Pricing
           </NavLink>
         </li>
         <li>
-          <NavLink to="/product" onClick={() => setIsOpen(false)}>
+          <NavLink
+            to="/product"
+            onClick={() => setIsOpen(false)}
+            className={styles.navLink}
+          >
             Product
           </NavLink>
         </li>
         <li>
           <NavLink
             to="/login"
-            className={styles.ctaLink}
+            className={`${styles.ctaLink} ${styles.navLink}`}
             onClick={() => setIsOpen(false)}
           >
             Login

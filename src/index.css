@@ -74,6 +74,12 @@ input:focus {
   font-weight: 600;
   padding: 1rem 3rem;
   border-radius: 5px;
+  transition: 0.23s all ease-in;
+}
+
+.cta:visited:hover {
+  background-color: var(--color-purple--2);
+  color: white;
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
