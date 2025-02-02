@@ -9,7 +9,7 @@ export default function Product() {
       <section>
         <img
           src="images/img-1.jpg"
-          alt="person with dog overlooking mountain with sunset"
+          alt="lonely person glaring at the mountain and ocean"
         />
         <div>
           <h2>Explore with Travex</h2>

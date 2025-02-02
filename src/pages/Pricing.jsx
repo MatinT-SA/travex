@@ -9,7 +9,9 @@ export default function Product() {
 
       <section>
         <div>
-          <h2>Affordable Plans for Every Traveler</h2>
+          <h2>
+            Affordable Plans <br /> for Every Traveler <br />
+          </h2>
           <p>
             Choose the plan that fits your journey and unlock the full potential
             of Travex to track every destination you've explored on the map.
@@ -17,7 +19,7 @@ export default function Product() {
         </div>
         <img
           src="images/img-2.jpg"
-          alt="overview of a large city with skyscrapers"
+          alt="Calculator on a piece of paper with circled word competitive pricing"
         />
       </section>
     </main>
