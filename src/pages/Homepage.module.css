@@ -7,7 +7,8 @@
     ),
     url("../images/bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   padding: 2.5rem 5rem;
 }
 
@@ -31,4 +32,21 @@
   font-size: 1.9rem;
   color: var(--color-light--1);
   margin-bottom: 2.5rem;
+}
+
+@media (max-width: 550px) {
+  .homepage h1 {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .homepage h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .homepage {
+    padding: 1.5rem 2.5rem;
+  }
 }

@@ -86,3 +86,15 @@ input:focus {
     font-size: 90%;
   }
 }
+
+@media (max-width: 900px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
