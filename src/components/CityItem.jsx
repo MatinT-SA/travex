@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./CityItem.module.css";
 import { Link } from "react-router-dom";
 import { useCities } from "../contexts/CitiesContext";
@@ -11,9 +11,18 @@ const formatDate = (date) =>
     weekday: "long",
   }).format(new Date(date));
 
-const CityItem = ({ city }) => {
+const CityItem = ({ city, isNew }) => {
   const { currentCity, deleteCity } = useCities();
+  const [animationClass, setAnimationClass] = useState("");
   const { cityName, emoji, date, id, position } = city;
+
+  useEffect(() => {
+    if (isNew) {
+      setAnimationClass(
+        id % 2 === 0 ? styles.slideInFromRight : styles.slideInFromLeft
+      );
+    }
+  }, [id, isNew]);
 
   function handleClick(e) {
     e.preventDefault();
@@ -21,7 +30,7 @@ const CityItem = ({ city }) => {
   }
 
   return (
-    <li>
+    <li className={animationClass}>
       <Link
         className={`${styles.cityItem} ${
           id === currentCity.id ? styles["cityItem--active"] : ""

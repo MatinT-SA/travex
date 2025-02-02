@@ -8,13 +8,21 @@
   font-weight: 600;
 
   background: linear-gradient(
-    to right,
+    to bottom,
     var(--color-purple--2),
-    var(--color-purple--2)
+    var(--color-purple--1)
   );
   border-radius: 7px;
   padding: 1rem 2rem;
   border-left: 5px solid var(--color-purple--3);
+}
+
+.countryItem:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--color-purple--1),
+    var(--color-purple--2)
+  );
 }
 
 .countryItem span:first-child {

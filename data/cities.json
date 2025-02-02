@@ -1,184 +1,64 @@
 {
   "cities": [
     {
-      "cityName": "Karaj",
-      "country": "Iran",
-      "emoji": "🇮🇷",
-      "date": "2027-11-05T12:30:45.238Z",
-      "notes": "A growing city with beautiful nature.",
-      "position": {
-        "lat": 35.812753,
-        "lng": 50.946075
-      },
-      "id": 10101010
-    },
-    {
-      "cityName": "Zurich",
-      "country": "Switzerland",
-      "emoji": "🇨🇭",
-      "date": "2027-06-18T14:45:22.123Z",
-      "notes": "Beautiful lakes and high quality of life.",
-      "position": {
-        "lat": 47.3769,
-        "lng": 8.5417
-      },
-      "id": 30303030
-    },
-    {
-      "cityName": "Tehran",
-      "country": "Iran",
-      "emoji": "🇮🇷",
-      "date": "2027-11-05T12:30:45.238Z",
-      "notes": "The heart of Iran with amazing history!",
-      "position": {
-        "lat": 35.6892,
-        "lng": 51.389
-      },
-      "id": 2039121831
-    },
-    {
-      "cityName": "Geneva",
-      "country": "Switzerland",
-      "emoji": "🇨🇭",
-      "date": "2027-09-10T16:20:11.784Z",
-      "notes": "A global city with breathtaking views.",
-      "position": {
-        "lat": 46.2044,
-        "lng": 6.1432
-      },
-      "id": 40404040
-    },
-    {
-      "cityName": "Brussels",
-      "date": "2025-01-28T15:10:04.278Z",
-      "notes": "test",
-      "emoji": "🇧🇪",
-      "country": "Belgium",
-      "position": {
-        "lat": "50.830228205617445",
-        "lng": "4.350585937500001"
-      },
-      "id": 2039121832
-    },
-    {
-      "cityName": "Khondab",
-      "date": "2025-02-02T11:44:55.795Z",
+      "cityName": "Shahriar",
+      "date": "2025-02-02T16:35:00.610Z",
       "notes": "",
       "emoji": "🇮🇷",
       "country": "Iran (Islamic Republic of)",
       "position": {
-        "lat": "34.52045351637328",
-        "lng": "49.153273212382906"
+        "lat": "35.676972764481974",
+        "lng": "51.1083984375"
       },
-      "id": 2039121833
+      "id": 1
     },
     {
-      "cityName": "Ulytau",
-      "date": "2025-02-02T11:46:32.959Z",
+      "cityName": "Khur",
+      "date": "2025-02-02T16:35:03.955Z",
       "notes": "",
-      "emoji": "🇰🇿",
-      "country": "Kazakhstan",
+      "emoji": "🇮🇷",
+      "country": "Iran (Islamic Republic of)",
       "position": {
-        "lat": "46.77700795050814",
-        "lng": "67.85701196935382"
+        "lat": "33.89103504911059",
+        "lng": "55.32714843750001"
       },
-      "id": 2039121834
+      "id": 2
     },
     {
-      "cityName": "Tura",
-      "date": "2025-02-02T11:46:36.691Z",
+      "cityName": "Buin va Miandasht",
+      "date": "2025-02-02T16:35:06.923Z",
       "notes": "",
-      "emoji": "🇷🇺",
-      "country": "Russian Federation (the)",
+      "emoji": "🇮🇷",
+      "country": "Iran (Islamic Republic of)",
       "position": {
-        "lat": "63.61712385886328",
-        "lng": "96.33857216922752"
+        "lat": "33.06602094102035",
+        "lng": "50.20751953125"
       },
-      "id": 2039121835
+      "id": 3
     },
     {
-      "cityName": "Shangluo",
-      "date": "2025-02-02T11:46:39.514Z",
+      "cityName": "Nik Pey",
+      "date": "2025-02-02T16:39:41.941Z",
       "notes": "",
-      "emoji": "🇨🇳",
-      "country": "China",
+      "emoji": "🇮🇷",
+      "country": "Iran (Islamic Republic of)",
       "position": {
-        "lat": "33.82361628619064",
-        "lng": "110.04713787945698"
+        "lat": "36.96885356043026",
+        "lng": "47.50488281250001"
       },
-      "id": 2039121836
+      "id": 4
     },
     {
-      "cityName": "Uydzen",
-      "date": "2025-02-02T11:46:42.456Z",
+      "cityName": "Bismil",
+      "date": "2025-02-02T16:39:46.706Z",
       "notes": "",
-      "emoji": "🇲🇳",
-      "country": "Mongolia",
+      "emoji": "🇹🇷",
+      "country": "Turkiye",
       "position": {
-        "lat": "44.06657803822094",
-        "lng": "107.23198373376133"
+        "lat": "38.03219106928443",
+        "lng": "40.64941406250001"
       },
-      "id": 2039121837
-    },
-    {
-      "cityName": "Morehead",
-      "date": "2025-02-02T11:46:45.999Z",
-      "notes": "",
-      "emoji": "🇵🇬",
-      "country": "Papua New Guinea",
-      "position": {
-        "lat": "-8.11955596468016",
-        "lng": "141.16363798700274"
-      },
-      "id": 2039121838
-    },
-    {
-      "cityName": "Tibooburra",
-      "date": "2025-02-02T11:46:48.710Z",
-      "notes": "",
-      "emoji": "🇦🇺",
-      "country": "Australia",
-      "position": {
-        "lat": "-29.268401080417448",
-        "lng": "142.56469263798147"
-      },
-      "id": 2039121839
-    },
-    {
-      "cityName": "Talamadugu",
-      "date": "2025-02-02T11:52:19.924Z",
-      "notes": "",
-      "emoji": "🇮🇳",
-      "country": "India",
-      "position": {
-        "lat": "19.619311334843413",
-        "lng": "78.40514038899234"
-      },
-      "id": 2039121840
-    },
-    {
-      "cityName": "Maţarah",
-      "date": "2025-02-02T11:52:26.319Z",
-      "notes": "",
-      "emoji": "🇾🇪",
-      "country": "Yemen",
-      "position": {
-        "lat": "15.417875763726636",
-        "lng": "47.461812803367714"
-      },
-      "id": 2039121841
-    },
-    {
-      "cityName": "Ahero",
-      "date": "2025-02-02T11:52:30.749Z",
-      "notes": "",
-      "emoji": "🇰🇪",
-      "country": "Kenya",
-      "position": {
-        "lat": "-0.21806202257470697",
-        "lng": "34.98433702617343"
-      },
-      "id": 2039121842
+      "id": 5
     }
   ]
 }

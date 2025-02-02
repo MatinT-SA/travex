@@ -62,3 +62,37 @@
   background-color: var(--color-blue--1);
   color: var(--color-dark--1);
 }
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Sliding animations ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideInFromRight {
+  animation: slideInFromRight 0.5s ease-out;
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeft 0.5s ease-out;
+}
