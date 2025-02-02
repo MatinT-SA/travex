@@ -48,5 +48,5 @@
 .city a:link,
 .city a:visited {
   font-size: 1.6rem;
-  color: var(--color-purple--3);
+  color: var(--color-blue--1);
 }

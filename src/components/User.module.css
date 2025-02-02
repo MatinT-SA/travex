@@ -18,6 +18,11 @@
 .user img {
   border-radius: 100px;
   height: 4rem;
+  transition: transform 0.3s ease;
+}
+
+.user img:hover {
+  transform: scale(1.1);
 }
 
 .user button {
@@ -31,4 +36,10 @@
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+
+.user button:hover {
+  background-color: var(--color-blue--1);
+  color: var(--color-dark--1);
 }
