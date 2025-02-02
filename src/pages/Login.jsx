@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Login.module.css";
 import PageNav from "../components/PageNav";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import Button from "../components/Button";
 
@@ -9,7 +9,6 @@ export default function Login() {
   const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
-  // PRE-FILL FOR DEV PURPOSES
   const [email, setEmail] = useState("Matin@example.com");
   const [password, setPassword] = useState("wimbledon");
 
