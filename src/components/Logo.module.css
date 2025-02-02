@@ -1,5 +1,10 @@
 .logo {
   height: 5.2rem;
+  transition: transform 0.3s ease-out;
+}
+
+.logo:hover {
+  transform: translateX(4px);
 }
 
 @media (max-width: 900px) {

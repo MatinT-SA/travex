@@ -37,10 +37,12 @@
   color: white;
   padding: 0.8rem 2rem;
   border-radius: 7px;
+  transition: 0.24s all ease-out;
 }
 
 .ctaLink:hover {
   border-bottom: none;
+  background-color: var(--color-purple--2);
 }
 
 .ctaLink:global(.active) {
