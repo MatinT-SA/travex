@@ -10,10 +10,10 @@
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
 
 :root {
-  --color-brand--1: #5e005e;
-  --color-brand--2: #009dff;
+  --color-blue--1: #009dff;
   --color-purple--1: #6a1b9a;
   --color-purple--2: #9c27b0;
+  --color-purple--3: #5e005e;
   --color-green--1: #20ae0d;
 
   --color-dark--1: #272c30;
@@ -66,7 +66,7 @@ input:focus {
 .cta:link,
 .cta:visited {
   display: inline-block;
-  background-color: var(--color-brand--2);
+  background-color: var(--color-blue--1);
   color: var(--color-dark--1);
   text-transform: uppercase;
   text-decoration: none;
