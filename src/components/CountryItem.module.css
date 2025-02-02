@@ -14,7 +14,7 @@
   );
   border-radius: 7px;
   padding: 1rem 2rem;
-  border-left: 5px solid var(--color-brand--1);
+  border-left: 5px solid var(--color-purple--3);
 }
 
 .countryItem span:first-child {

@@ -29,7 +29,7 @@
 }
 
 .button {
-  background-color: var(--color-brand--2);
+  background-color: var(--color-blue--1);
   color: var(--color-purple--2);
   padding: 1rem 2rem;
   border-radius: 7px;
