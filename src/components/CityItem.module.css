@@ -2,15 +2,15 @@
 .cityItem:link,
 .cityItem:visited {
   display: flex;
-  gap: 1.6rem;
+  gap: 1.5rem;
   align-items: center;
   background: linear-gradient(
     to right,
     var(--color-purple--2),
     var(--color-purple--1)
   );
-  border-radius: 7px;
-  padding: 1rem 2rem;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
   border-left: 5px solid var(--color-purple--3);
   cursor: pointer;
   color: inherit;
@@ -26,23 +26,23 @@
 }
 
 .cityItem--active {
-  border: 2px solid var(--color-purple--2);
-  border-left: 5px solid var(--color-purple--2);
+  border: 3px solid var(--color-blue--1);
+  border-left: 7px solid var(--color-blue--1) !important;
 }
 
 .emoji {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
 .name {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin-right: auto;
 }
 
 .date {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .deleteBtn {
@@ -52,10 +52,10 @@
   border: none;
   background-color: var(--color-dark--1);
   color: var(--color-light--2);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 400;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease-out;
 }
 
 .deleteBtn:hover {

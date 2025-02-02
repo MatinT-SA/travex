@@ -23,30 +23,6 @@
         "lng": "38.34228515625001"
       },
       "id": 2
-    },
-    {
-      "cityName": "Zelenogorskoye",
-      "date": "2025-02-02T17:22:24.958Z",
-      "notes": "",
-      "emoji": "🇺🇦",
-      "country": "Ukraine",
-      "position": {
-        "lat": "45.05820517608334",
-        "lng": "34.51904296875001"
-      },
-      "id": 3
-    },
-    {
-      "cityName": "Ciochina",
-      "date": "2025-02-02T17:22:27.723Z",
-      "notes": "",
-      "emoji": "🇷🇴",
-      "country": "Romania",
-      "position": {
-        "lat": "44.592172455172374",
-        "lng": "27.026367187500004"
-      },
-      "id": 4
     }
   ]
 }

@@ -1,43 +1,41 @@
 .city {
-  padding: 2rem 3rem;
-  max-height: 70%;
+  padding: 3rem;
+  max-height: 75%;
   background: linear-gradient(
     to right,
     var(--color-purple--1),
     var(--color-purple--2)
   );
-
-  border-radius: 7px;
-  overflow: none;
-
+  border-radius: 10px;
+  overflow-y: scroll;
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .row {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.7rem;
 }
 
 .city h6 {
   text-transform: uppercase;
-  font-size: 1.1rem;
-  font-weight: 900;
+  font-size: 1.2rem;
+  font-weight: 800;
   color: var(--color-light--1);
 }
 
 .city h3 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
 .city h3 span {
-  font-size: 3.2rem;
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -49,4 +47,27 @@
 .city a:visited {
   font-size: 1.6rem;
   color: var(--color-blue--1);
+}
+
+.city::-webkit-scrollbar {
+  width: 12px;
+}
+
+.city::-webkit-scrollbar-track {
+  background: var(--color-light--3);
+  border-radius: 1rem;
+}
+
+.city::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    45deg,
+    var(--color-blue--1),
+    var(--color-purple--3)
+  );
+  border-radius: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.city::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue--1);
 }
