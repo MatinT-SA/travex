@@ -23,7 +23,7 @@ export default function Login() {
     e.preventDefault();
     if (email && password) login(email, password);
     toast.success("Successful Login", {
-      duration: 3000,
+      duration: 2000,
       style: {
         background: "#20ae0d",
         color: "white",
