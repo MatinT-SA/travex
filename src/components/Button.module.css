@@ -41,6 +41,7 @@
   font-size: 1.5rem;
   bottom: 4rem;
   left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--color-blue--1);
   color: var(--color-dark--1);
   box-shadow: 0 4px 10px 4px rgba(36, 42, 46, 0.2);
@@ -49,7 +50,7 @@
 }
 
 .position:hover {
-  transform: translateY(-3px);
+  transform: translate(-50%, -62%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -78,11 +79,23 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translate(-50%, 0);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Responsiveness ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+@media (max-width: 700px) {
+  .position {
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    bottom: 1rem;
   }
 }

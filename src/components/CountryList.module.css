@@ -33,3 +33,19 @@
 .countryList::-webkit-scrollbar-thumb:hover {
   background: var(--color-blue--1);
 }
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Responsiveness ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+@media (max-width: 850px) {
+  .countryList {
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .countryList {
+    padding-right: 0;
+  }
+}

@@ -8,3 +8,25 @@
   align-items: center;
   height: calc(100vh - 4.8rem);
 }
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Responsiveness ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+@media (max-width: 1200px) {
+  .sidebar {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 850px) {
+  .sidebar {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    height: 72vh;
+  }
+}

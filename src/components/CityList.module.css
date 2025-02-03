@@ -1,6 +1,6 @@
 .cityList {
   width: 100%;
-  height: 65vh;
+  height: auto;
   list-style: none;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -31,4 +31,20 @@
 
 .cityList::-webkit-scrollbar-thumb:hover {
   background: var(--color-blue--1);
+}
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Responsiveness ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+@media (max-width: 850px) {
+  .cityList {
+    padding-right: 0.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .cityList {
+    padding-right: 0;
+  }
 }

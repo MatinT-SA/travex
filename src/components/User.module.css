@@ -42,3 +42,28 @@
   background-color: var(--color-blue--1);
   color: var(--color-dark--1);
 }
+
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Responsiveness ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+@media (max-width: 750px) {
+  .user {
+    top: 3rem;
+    right: 3rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    gap: 1.5rem;
+  }
+
+  .user img {
+    height: 3rem;
+  }
+
+  .user button {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
