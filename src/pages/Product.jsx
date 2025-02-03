@@ -8,6 +8,7 @@ export default function Product() {
 
       <section>
         <img
+          className={styles.image}
           src="images/img-1.jpg"
           alt="lonely person glaring at the mountain and ocean"
         />
