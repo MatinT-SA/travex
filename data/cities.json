@@ -73,30 +73,6 @@
       "id": 6
     },
     {
-      "cityName": "Atasu",
-      "date": "2025-02-03T14:51:20.934Z",
-      "notes": "",
-      "emoji": "🇰🇿",
-      "country": "Kazakhstan",
-      "position": {
-        "lat": "46.26073092905163",
-        "lng": "69.64737752097612"
-      },
-      "id": 7
-    },
-    {
-      "cityName": "Qarqaraly",
-      "date": "2025-02-03T14:51:30.602Z",
-      "notes": "",
-      "emoji": "🇰🇿",
-      "country": "Kazakhstan",
-      "position": {
-        "lat": "49.190347874276235",
-        "lng": "75.75565583673766"
-      },
-      "id": 8
-    },
-    {
       "cityName": "Kormilovka",
       "date": "2025-02-03T14:53:11.630Z",
       "notes": "",
@@ -109,14 +85,14 @@
       "id": 9
     },
     {
-      "cityName": "Joutsa",
-      "date": "2025-02-03T14:53:35.458Z",
+      "cityName": "Middle",
+      "date": "2025-02-03T15:57:15.232Z",
       "notes": "",
-      "emoji": "🇫🇮",
-      "country": "Finland",
+      "emoji": "🇮🇲",
+      "country": "Isle of Man",
       "position": {
-        "lat": "61.84240518554749",
-        "lng": "25.990088970296096"
+        "lat": "54.263395874626454",
+        "lng": "-4.507462546185025"
       },
       "id": 10
     }

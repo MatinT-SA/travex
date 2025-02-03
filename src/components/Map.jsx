@@ -13,6 +13,7 @@ import { useCities } from "../contexts/CitiesContext";
 import { useGeolocation } from "../hooks/useGeolocation";
 import Button from "./Button";
 import { useUrlPosition } from "../hooks/useUrlPosition";
+import User from "./User";
 
 const Map = () => {
   const { cities } = useCities();
@@ -64,6 +65,7 @@ const Map = () => {
 
         <ChangeCenter position={mapPosition} />
         <DetectClick />
+        <User />
       </MapContainer>
     </div>
   );
