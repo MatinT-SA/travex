@@ -7,9 +7,9 @@ export default defineConfig({
   plugins: [
     react(),
     eslint({
-      failOnWarning: false, // Allows build with warnings
-      failOnError: false, // Allows build with errors (not recommended)
+      failOnWarning: false,
+      failOnError: false,
     }),
   ],
-  base: "/travex",
+  base: "/",
 });
