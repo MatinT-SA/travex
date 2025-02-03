@@ -1,7 +1,7 @@
 .user {
   position: absolute;
-  top: 4rem;
-  right: 4rem;
+  top: 3rem;
+  right: 3rem;
   background-color: var(--color-dark--1);
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -49,8 +49,8 @@
 
 @media (max-width: 750px) {
   .user {
-    top: 3rem;
-    right: 3rem;
+    top: 2rem;
+    right: 2rem;
     padding: 0.7rem 1rem;
     font-size: 1.2rem;
     font-weight: 500;
