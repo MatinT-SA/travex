@@ -13,11 +13,13 @@ import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
 import { AuthProvider } from "./contexts/AuthContext";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <AuthProvider>
       <CitiesProvider>
+        <Toaster position="top-center" />
         <BrowserRouter>
           <Routes>
             <Route index element={<HomePages />} />
