@@ -11,5 +11,5 @@ export default defineConfig({
       failOnError: false, // Allows build with errors (not recommended)
     }),
   ],
-  base: "travex"
+  base: "/travex",
 });
