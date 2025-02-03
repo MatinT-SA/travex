@@ -34,6 +34,23 @@
   margin-bottom: 3rem;
 }
 
+@media (max-width: 1200px) {
+  .homepage {
+    padding: 2rem 4rem;
+  }
+
+  .homepage h1 {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage h1 {
+    font-size: 3.5rem;
+    line-height: 1.3;
+  }
+}
+
 @media (max-width: 550px) {
   .homepage h1 {
     font-size: 3rem;
