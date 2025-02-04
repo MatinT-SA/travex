@@ -33,6 +33,9 @@ export default function Login() {
       progress: undefined,
       theme: "colored",
       transition: Zoom,
+      style: {
+        fontSize: "1.8rem",
+      },
     });
   }
 

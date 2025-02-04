@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./CityItem.module.css";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
+import { Flip, toast } from "react-toastify";
 import { useCities } from "../contexts/CitiesContext";
 
 const formatDate = (date) =>
@@ -33,7 +33,18 @@ const CityItem = ({ city, isNew }) => {
 
   function handleConfirmDelete() {
     deleteCity(id);
-    toast.success("City has been deleted successfully!");
+    toast.success(`${cityName} deleted successfully`, {
+      hideProgressBar: true,
+      closeOnClick: false,
+      pauseOnHover: false,
+      draggable: false,
+      progress: undefined,
+      theme: "colored",
+      transition: Flip,
+      style: {
+        fontSize: "1.5rem",
+      },
+    });
     setShowConfirmation(false);
   }
 
@@ -65,7 +76,7 @@ const CityItem = ({ city, isNew }) => {
               className={styles.confirmButton}
               onClick={handleConfirmDelete}
             >
-              Yes, delete it!
+              Yes, delete
             </button>
             <button
               className={styles.cancelButton}

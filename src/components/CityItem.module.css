@@ -63,53 +63,55 @@
   color: var(--color-dark--1);
 }
 
-/* Modal overlay */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Custom Confirmation ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
+/*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
 .confirmationModal {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999; /* Make sure it's on top */
+  z-index: 2000;
 }
 
-/* Modal content */
 .modalContent {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  background: var(--color-dark--1);
+  color: var(--color-light--3);
+  padding: 3rem;
+  border-radius: 10px;
   text-align: center;
-  width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 35rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  font-size: 1.4rem;
 }
 
-/* Confirm and Cancel buttons */
 .confirmButton,
 .cancelButton {
-  padding: 10px 20px;
-  margin: 5px;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0.8rem 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .confirmButton {
-  background-color: #4caf50; /* Green for confirmation */
-  color: white;
+  background-color: var(--color-green--1);
+  color: var(--color-light--2);
 }
 
 .cancelButton {
-  background-color: #f44336; /* Red for cancel */
-  color: white;
+  background-color: #f44336;
+  color: var(--color-light--2);
 }
 
-/* Button hover effects */
 .confirmButton:hover {
-  background-color: #45a049;
+  background-color: #23b42b;
 }
 
 .cancelButton:hover {
@@ -117,7 +119,7 @@
 }
 
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
-/* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Sliding animations ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
+/* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Sliding animations ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
 
 @keyframes slideInFromRight {
