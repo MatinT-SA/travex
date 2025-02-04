@@ -12,7 +12,8 @@ import BackButton from "./BackButton";
 import { Message } from "./Message";
 import Spinner from "./Spinner";
 
-const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
+const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode";
+const API_KEY = "bdc_4cdf28da53d34a1c9b5f25c6a3fd4337";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -41,7 +42,9 @@ function Form() {
       try {
         setGeocodingError("");
         setIsLoadingGeocoding(true);
-        const res = await fetch(`${BASE_URL}?latitude=${lat}&longitude=${lng}`);
+        const res = await fetch(
+          `${BASE_URL}?latitude=${lat}&longitude=${lng}&localityLanguage=en&key=${API_KEY}`
+        );
         const data = await res.json();
 
         if (!data.countryCode) throw new Error("You haven't clicked on a city");
