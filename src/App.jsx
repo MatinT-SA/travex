@@ -45,9 +45,9 @@ const App = () => {
         </BrowserRouter>
 
         <ToastContainer
-          position="top-right"
+          position="top-center"
           autoClose={3000}
-          hideProgressBar={false}
+          hideProgressBar
           newestOnTop
           closeOnClick
           pauseOnFocusLoss

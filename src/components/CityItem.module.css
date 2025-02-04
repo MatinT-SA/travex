@@ -63,6 +63,59 @@
   color: var(--color-dark--1);
 }
 
+/* Modal overlay */
+.confirmationModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Make sure it's on top */
+}
+
+/* Modal content */
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Confirm and Cancel buttons */
+.confirmButton,
+.cancelButton {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirmButton {
+  background-color: #4caf50; /* Green for confirmation */
+  color: white;
+}
+
+.cancelButton {
+  background-color: #f44336; /* Red for cancel */
+  color: white;
+}
+
+/* Button hover effects */
+.confirmButton:hover {
+  background-color: #45a049;
+}
+
+.cancelButton:hover {
+  background-color: #e53935;
+}
+
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
 /* ⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢⇢ Sliding animations ⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠⇠ */
 /*▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */

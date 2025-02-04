@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./CityItem.module.css";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import { useCities } from "../contexts/CitiesContext";
 
 const formatDate = (date) =>
@@ -14,6 +15,7 @@ const formatDate = (date) =>
 const CityItem = ({ city, isNew }) => {
   const { currentCity, deleteCity } = useCities();
   const [animationClass, setAnimationClass] = useState("");
+  const [showConfirmation, setShowConfirmation] = useState(false);
   const { cityName, emoji, date, id, position } = city;
 
   useEffect(() => {
@@ -26,7 +28,17 @@ const CityItem = ({ city, isNew }) => {
 
   function handleClick(e) {
     e.preventDefault();
+    setShowConfirmation(true);
+  }
+
+  function handleConfirmDelete() {
     deleteCity(id);
+    toast.success("City has been deleted successfully!");
+    setShowConfirmation(false);
+  }
+
+  function handleCancelDelete() {
+    setShowConfirmation(false);
   }
 
   return (
@@ -44,6 +56,26 @@ const CityItem = ({ city, isNew }) => {
           &times;
         </button>
       </Link>
+
+      {showConfirmation && (
+        <div className={styles.confirmationModal}>
+          <div className={styles.modalContent}>
+            <p>Are you sure you want to delete this city?</p>
+            <button
+              className={styles.confirmButton}
+              onClick={handleConfirmDelete}
+            >
+              Yes, delete it!
+            </button>
+            <button
+              className={styles.cancelButton}
+              onClick={handleCancelDelete}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
     </li>
   );
 };

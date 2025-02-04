@@ -85,16 +85,76 @@
       "id": 9
     },
     {
-      "cityName": "Miandoab",
-      "date": "2025-02-04T09:03:54.839Z",
+      "cityName": "Altamira",
+      "date": "2025-02-04T09:07:54.798Z",
       "notes": "",
-      "emoji": "🇮🇷",
-      "country": "Iran (Islamic Republic of)",
+      "emoji": "🇧🇷",
+      "country": "Brazil",
       "position": {
-        "lat": "37.241685032306414",
-        "lng": "45.71883710138417"
+        "lat": "-8.922226616934726",
+        "lng": "-53.89177486712948"
       },
       "id": 10
+    },
+    {
+      "cityName": "Township of Williamsburg",
+      "date": "2025-02-04T09:07:54.798Z",
+      "notes": "",
+      "emoji": "🇺🇸",
+      "country": "United States of America (the)",
+      "position": {
+        "lat": "40.6319658277346",
+        "lng": "-99.58777809715694"
+      },
+      "id": 11
+    },
+    {
+      "cityName": "Tall ‘Afar",
+      "date": "2025-02-04T09:09:51.544Z",
+      "notes": "",
+      "emoji": "🇮🇶",
+      "country": "Iraq",
+      "position": {
+        "lat": "36.449950791666986",
+        "lng": "42.20278818650485"
+      },
+      "id": 12
+    },
+    {
+      "cityName": "Bogazliyan",
+      "date": "2025-02-04T09:10:34.771Z",
+      "notes": "",
+      "emoji": "🇹🇷",
+      "country": "Turkiye",
+      "position": {
+        "lat": "39.380217719781086",
+        "lng": "35.061865666950524"
+      },
+      "id": 13
+    },
+    {
+      "cityName": "Sungurlare",
+      "date": "2025-02-04T09:10:50.972Z",
+      "notes": "",
+      "emoji": "🇧🇬",
+      "country": "Bulgaria",
+      "position": {
+        "lat": "42.903810104089914",
+        "lng": "26.756061182646775"
+      },
+      "id": 14
+    },
+    {
+      "cityName": "Blandiana",
+      "date": "2025-02-04T09:11:54.560Z",
+      "notes": "",
+      "emoji": "🇷🇴",
+      "country": "Romania",
+      "position": {
+        "lat": "46.023228034085804",
+        "lng": "23.350890295259813"
+      },
+      "id": 15
     }
   ]
 }
