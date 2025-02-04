@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import { toast, Zoom } from "react-toastify";
+
 import styles from "./Login.module.css";
 import PageNav from "../components/PageNav";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import Button from "../components/Button";
-import { toast } from "react-hot-toast";
 
 export default function Login() {
   const { login, isAuthenticated } = useAuth();
@@ -23,15 +24,15 @@ export default function Login() {
     e.preventDefault();
     if (email && password) login(email, password);
     toast.success("Successful Login", {
-      duration: 2000,
-      style: {
-        background: "#20ae0d",
-        color: "white",
-        fontSize: "1.8rem",
-        boxShadow: "0 2px 8px 4px rgba(0,0,0,0.3)",
-        top: "2rem",
-        position: "relative",
-      },
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: false,
+      pauseOnHover: false,
+      draggable: false,
+      progress: undefined,
+      theme: "colored",
+      transition: Zoom,
     });
   }
 

@@ -1,4 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Product from "./pages/Product";
 import Pricing from "./pages/Pricing";
@@ -13,13 +15,11 @@ import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
 import { AuthProvider } from "./contexts/AuthContext";
 import ProtectedRoute from "./pages/ProtectedRoute";
-import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <AuthProvider>
       <CitiesProvider>
-        <Toaster position="top-center" />
         <BrowserRouter>
           <Routes>
             <Route index element={<HomePages />} />
@@ -43,6 +43,18 @@ const App = () => {
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
+
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+        />
       </CitiesProvider>
     </AuthProvider>
   );
