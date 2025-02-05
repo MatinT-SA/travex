@@ -76,7 +76,7 @@ function Form() {
     };
 
     await createCity(newCity);
-    toast.success("City added", {
+    toast.success(`${cityName} added`, {
       position: "top-center",
       autoClose: 3000,
       hideProgressBar: true,
@@ -86,6 +86,9 @@ function Form() {
       progress: undefined,
       theme: "colored",
       transition: Slide,
+      style: {
+        fontSize: "1.8rem",
+      },
     });
     navigate("/app/cities");
   }
