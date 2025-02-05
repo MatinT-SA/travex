@@ -85,18 +85,6 @@
       "id": 7
     },
     {
-      "cityName": "Koping",
-      "date": "2025-02-04T15:00:56.780Z",
-      "notes": "",
-      "emoji": "🇸🇪",
-      "country": "Sweden",
-      "position": {
-        "lat": "59.47673773305736",
-        "lng": "15.969673807178836"
-      },
-      "id": 8
-    },
-    {
       "cityName": "Þingeyjarsveit",
       "date": "2025-02-04T15:01:30.613Z",
       "notes": "",
