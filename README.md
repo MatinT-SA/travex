@@ -26,5 +26,6 @@ To get started with the project, clone the repository and install the dependenci
 git clone https://github.com/MatinT-SA/travex.git
 cd travex
 npm install
+```
 
 **Note:** Please Connect to your VPN if the API is not getting loaded for you.
