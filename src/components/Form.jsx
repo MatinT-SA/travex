@@ -3,6 +3,8 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from "react-router-dom";
 import { toast, Slide } from "react-toastify";
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../firebase/firebaseConfig";
 
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import { useCities } from "../contexts/CitiesContext";
@@ -13,7 +15,7 @@ import { Message } from "./Message";
 import Spinner from "./Spinner";
 
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode";
-const API_KEY = "bdc_4cdf28da53d34a1c9b5f25c6a3fd4337";
+const API_KEY = import.meta.env.VITE_BIG_DATA_CLOUD_API_KEY;
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -75,22 +77,45 @@ function Form() {
       position: { lat, lng },
     };
 
-    await createCity(newCity);
-    toast.success(`${cityName} added`, {
-      position: "top-center",
-      autoClose: 3000,
-      hideProgressBar: true,
-      closeOnClick: false,
-      pauseOnHover: false,
-      draggable: false,
-      progress: undefined,
-      theme: "colored",
-      transition: Slide,
-      style: {
-        fontSize: "1.8rem",
-      },
-    });
-    navigate("/app/cities");
+    // Firestore: Add the new city to the Firestore database
+    try {
+      // Assuming the city name is unique
+      const cityRef = doc(db, "cities", cityName); // Use the city name as the doc ID
+      await setDoc(cityRef, newCity);
+
+      toast.success(`${cityName} added`, {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "colored",
+        transition: Slide,
+        style: {
+          fontSize: "1.8rem",
+        },
+      });
+
+      navigate("/app/cities"); // Navigate to the cities list page after successful submission
+    } catch (error) {
+      console.error("Error adding city: ", error);
+      toast.error("Error adding city to database", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "colored",
+        transition: Slide,
+        style: {
+          fontSize: "1.8rem",
+        },
+      });
+    }
   }
 
   if (isLoadingGeocoding) return <Spinner />;

@@ -97,18 +97,6 @@
       "id": 9
     },
     {
-      "cityName": "Islamabad",
-      "date": "2025-02-04T15:01:41.735Z",
-      "notes": "",
-      "emoji": "🇵🇰",
-      "country": "Pakistan",
-      "position": {
-        "lat": "33.67611861862492",
-        "lng": "73.07836687122239"
-      },
-      "id": 10
-    },
-    {
       "cityName": "Tehran",
       "date": "2025-02-04T15:02:12.339Z",
       "notes": "",
