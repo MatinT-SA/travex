@@ -3,8 +3,14 @@ import styles from "./CityItem.module.css";
 import { Link } from "react-router-dom";
 import { Flip, toast } from "react-toastify";
 import { useCities } from "../contexts/CitiesContext";
+import { Timestamp } from "firebase/firestore";
 
 const formatDate = (date) => {
+  // If the date is a Firestore Timestamp, convert it to a Date object
+  if (date instanceof Timestamp) {
+    date = date.toDate();
+  }
+
   const parsedDate = new Date(date);
   if (isNaN(parsedDate)) {
     return "Invalid date";
