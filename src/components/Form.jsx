@@ -142,7 +142,7 @@ function Form() {
 
         <DatePicker
           onChange={(date) => setDate(date)}
-          selected={date}
+          selected={isNaN(date) ? new Date() : date}
           dateFormat="yyyy/MM/dd"
           id="date"
         />
