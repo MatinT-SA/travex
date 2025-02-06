@@ -19,17 +19,6 @@ const formatDate = (date) => {
 };
 
 const CityItem = ({ city, isNew }) => {
-  if (
-    !city ||
-    !city.cityName ||
-    !city.emoji ||
-    !city.date ||
-    !city.id ||
-    !city.position
-  ) {
-    return null;
-  }
-
   const { currentCity, deleteCity } = useCities();
   const [animationClass, setAnimationClass] = useState("");
   const [showConfirmation, setShowConfirmation] = useState(false);
@@ -42,6 +31,17 @@ const CityItem = ({ city, isNew }) => {
       );
     }
   }, [id, isNew]);
+
+  if (
+    !city ||
+    !city.cityName ||
+    !city.emoji ||
+    !city.date ||
+    !city.id ||
+    !city.position
+  ) {
+    return null;
+  }
 
   function handleClick(e) {
     e.preventDefault();
