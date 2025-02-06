@@ -4,10 +4,34 @@ import Spinner from "./Spinner.jsx";
 import CityItem from "./CityItem.jsx";
 import Message from "./Message.jsx";
 import { useCities } from "../contexts/CitiesContext.jsx";
+import {
+  getFirestore,
+  collection,
+  query,
+  onSnapshot,
+} from "firebase/firestore";
 
 const CityList = () => {
-  const { cities, isLoading } = useCities();
+  const { cities, isLoading, dispatch } = useCities();
   const [newCityId, setNewCityId] = useState(null);
+  const db = getFirestore();
+
+  useEffect(() => {
+    const citiesRef = collection(db, "cities");
+    const q = query(citiesRef);
+
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      const citiesList = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      // Dispatch the cities/loaded action to update the state with the latest cities list
+      dispatch({ type: "cities/loaded", payload: citiesList });
+    });
+
+    // Cleanup listener on unmount
+    return () => unsubscribe();
+  }, [db, dispatch]);
 
   useEffect(() => {
     if (cities.length > 0) {
