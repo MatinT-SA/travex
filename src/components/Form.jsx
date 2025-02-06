@@ -77,11 +77,9 @@ function Form() {
       position: { lat, lng },
     };
 
-    // Firestore: Add the new city to the Firestore database
+    // Use createCity from context
     try {
-      // Assuming the city name is unique
-      const cityRef = doc(db, "cities", cityName); // Use the city name as the doc ID
-      await setDoc(cityRef, newCity);
+      await createCity(newCity); // Call createCity to handle state update and potentially firestore
 
       toast.success(`${cityName} added`, {
         position: "top-center",
@@ -101,7 +99,7 @@ function Form() {
       navigate("/app/cities"); // Navigate to the cities list page after successful submission
     } catch (error) {
       console.error("Error adding city: ", error);
-      toast.error("Error adding city to database", {
+      toast.error("Error adding city", {
         position: "top-center",
         autoClose: 3000,
         hideProgressBar: true,
