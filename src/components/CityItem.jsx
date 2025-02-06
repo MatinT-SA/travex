@@ -4,15 +4,32 @@ import { Link } from "react-router-dom";
 import { Flip, toast } from "react-toastify";
 import { useCities } from "../contexts/CitiesContext";
 
-const formatDate = (date) =>
-  new Intl.DateTimeFormat("en", {
+const formatDate = (date) => {
+  const parsedDate = new Date(date);
+  if (isNaN(parsedDate)) {
+    return "Invalid date";
+  }
+
+  return new Intl.DateTimeFormat("en", {
     day: "numeric",
     month: "long",
     year: "numeric",
     weekday: "long",
-  }).format(new Date(date));
+  }).format(parsedDate);
+};
 
 const CityItem = ({ city, isNew }) => {
+  if (
+    !city ||
+    !city.cityName ||
+    !city.emoji ||
+    !city.date ||
+    !city.id ||
+    !city.position
+  ) {
+    return null;
+  }
+
   const { currentCity, deleteCity } = useCities();
   const [animationClass, setAnimationClass] = useState("");
   const [showConfirmation, setShowConfirmation] = useState(false);

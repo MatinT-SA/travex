@@ -145,6 +145,7 @@ function CitiesProvider({ children }) {
         getCity,
         createCity,
         deleteCity,
+        dispatch,
       }}
     >
       {children}
