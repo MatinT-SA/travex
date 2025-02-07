@@ -15,6 +15,7 @@ export default function Login() {
   const [password, setPassword] = useState("wimbledon");
 
   useEffect(() => {
+    console.log("isAuthenticated:", isAuthenticated); // Check if this logs correctly
     if (isAuthenticated) {
       navigate("/app", { replace: true });
     }
