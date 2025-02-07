@@ -1,12 +1,3 @@
-import {
-  doc,
-  setDoc,
-  collection,
-  getDocs,
-  getDoc,
-  deleteDoc,
-} from "firebase/firestore";
-
 import { createContext, useContext, useEffect, useReducer } from "react";
 
 const CitiesContext = createContext();
@@ -80,12 +71,9 @@ function CitiesProvider({ children }) {
     async function fetchCities() {
       dispatch({ type: "loading" });
       try {
-        const querySnapshot = await getDocs(collection(db, "cities"));
-        const citiesList = querySnapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        dispatch({ type: "cities/loaded", payload: citiesList });
+        const res = await fetch(`${BASE_URL}/cities`);
+        const data = await res.json();
+        dispatch({ type: "cities/loaded", payload: data });
       } catch (error) {
         dispatch({
           type: "rejected",
@@ -102,19 +90,9 @@ function CitiesProvider({ children }) {
 
     dispatch({ type: "loading" });
     try {
-      const docRef = doc(db, "cities", id);
-      const docSnapshot = await getDoc(docRef);
-      if (docSnapshot.exists()) {
-        dispatch({
-          type: "city/loaded",
-          payload: { id: docSnapshot.id, ...docSnapshot.data() },
-        });
-      } else {
-        dispatch({
-          type: "rejected",
-          payload: "City not found",
-        });
-      }
+      const res = await fetch(`${BASE_URL}/cities/${id}`);
+      const data = await res.json();
+      dispatch({ type: "city/loaded", payload: data });
     } catch (error) {
       dispatch({
         type: "rejected",
@@ -126,9 +104,13 @@ function CitiesProvider({ children }) {
   async function createCity(newCity) {
     dispatch({ type: "loading" });
     try {
-      const cityRef = doc(db, "cities", newCity.cityName);
-      await setDoc(cityRef, newCity);
-      dispatch({ type: "city/created", payload: newCity });
+      const res = await fetch(`${BASE_URL}/cities`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newCity),
+      });
+      const data = await res.json();
+      dispatch({ type: "city/created", payload: data });
     } catch (error) {
       dispatch({
         type: "rejected",
@@ -141,8 +123,9 @@ function CitiesProvider({ children }) {
     dispatch({ type: "loading" });
 
     try {
-      const cityRef = doc(db, "cities", id);
-      await deleteDoc(cityRef);
+      await fetch(`${BASE_URL}/cities/${id}`, {
+        method: "DELETE",
+      });
       dispatch({ type: "city/deleted", payload: id });
     } catch (error) {
       dispatch({
@@ -162,7 +145,6 @@ function CitiesProvider({ children }) {
         getCity,
         createCity,
         deleteCity,
-        dispatch,
       }}
     >
       {children}
