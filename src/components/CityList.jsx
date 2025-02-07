@@ -7,6 +7,7 @@ import { useCities } from "../contexts/CitiesContext.jsx";
 
 const CityList = () => {
   const { cities, isLoading } = useCities();
+  console.log(cities);
   const [newCityId, setNewCityId] = useState(null);
 
   useEffect(() => {
