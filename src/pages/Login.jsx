@@ -22,21 +22,44 @@ export default function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (email && password) login(email, password);
-    toast.success("Successful Login", {
-      position: "top-center",
-      autoClose: 2000,
-      hideProgressBar: true,
-      closeOnClick: false,
-      pauseOnHover: false,
-      draggable: false,
-      progress: undefined,
-      theme: "colored",
-      transition: Zoom,
-      style: {
-        fontSize: "1.8rem",
-      },
-    });
+    function handleSubmit(e) {
+      e.preventDefault();
+
+      if (email && password) {
+        const loginSuccess = login(email, password); // Check if login is successful
+        if (loginSuccess) {
+          toast.success("Successful Login", {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: true,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+            theme: "colored",
+            transition: Zoom,
+            style: {
+              fontSize: "1.8rem",
+            },
+          });
+        } else {
+          toast.error("Invalid email or password", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+            theme: "colored",
+            transition: Zoom,
+            style: {
+              fontSize: "1.8rem",
+            },
+          });
+        }
+      }
+    }
   }
 
   return (

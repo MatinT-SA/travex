@@ -41,6 +41,9 @@ function AuthProvider({ children }) {
   function login(email, password) {
     if (email === USER_TEST.email && password === USER_TEST.password) {
       dispatch({ type: "login", payload: USER_TEST });
+      return true;
+    } else {
+      return false;
     }
   }
 
