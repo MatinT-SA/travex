@@ -15,9 +15,11 @@ export default function Login() {
   const [password, setPassword] = useState("wimbledon");
 
   useEffect(() => {
-    console.log("isAuthenticated:", isAuthenticated); // Check if this logs correctly
+    console.log("isAuthenticated:", isAuthenticated);
     if (isAuthenticated) {
-      navigate("/app", { replace: true });
+      setTimeout(() => {
+        navigate("/app", { replace: true });
+      }, 100); // Adding a short delay to ensure everything has settled
     }
   }, [isAuthenticated, navigate]);
 
