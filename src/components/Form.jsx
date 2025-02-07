@@ -3,8 +3,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from "react-router-dom";
 import { toast, Slide } from "react-toastify";
-import { doc, setDoc } from "firebase/firestore";
-import { db } from "../firebase/firebaseConfig";
 
 import { useUrlPosition } from "../hooks/useUrlPosition";
 import { useCities } from "../contexts/CitiesContext";
@@ -26,7 +24,7 @@ export function convertToEmoji(countryCode) {
 }
 
 function Form() {
-  const { createCity, isLoading } = useCities();
+  const { createCity, isLoading, dispatch } = useCities();
   const navigate = useNavigate();
 
   const [lat, lng] = useUrlPosition();
@@ -77,43 +75,22 @@ function Form() {
       position: { lat, lng },
     };
 
-    // Use createCity from context
-    try {
-      await createCity(newCity); // Call createCity to handle state update and potentially firestore
-
-      toast.success(`${cityName} added`, {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: true,
-        closeOnClick: false,
-        pauseOnHover: false,
-        draggable: false,
-        progress: undefined,
-        theme: "colored",
-        transition: Slide,
-        style: {
-          fontSize: "1.8rem",
-        },
-      });
-
-      navigate("/app/cities"); // Navigate to the cities list page after successful submission
-    } catch (error) {
-      console.error("Error adding city: ", error);
-      toast.error("Error adding city", {
-        position: "top-center",
-        autoClose: 3000,
-        hideProgressBar: true,
-        closeOnClick: false,
-        pauseOnHover: false,
-        draggable: false,
-        progress: undefined,
-        theme: "colored",
-        transition: Slide,
-        style: {
-          fontSize: "1.8rem",
-        },
-      });
-    }
+    await createCity(newCity);
+    toast.success(`${cityName} added`, {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: false,
+      pauseOnHover: false,
+      draggable: false,
+      progress: undefined,
+      theme: "colored",
+      transition: Slide,
+      style: {
+        fontSize: "1.8rem",
+      },
+    });
+    navigate("/app/cities");
   }
 
   if (isLoadingGeocoding) return <Spinner />;
