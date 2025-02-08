@@ -24,7 +24,7 @@ export function convertToEmoji(countryCode) {
 }
 
 function Form() {
-  const { createCity, isLoading, dispatch } = useCities();
+  const { createCity, isLoading } = useCities();
   const navigate = useNavigate();
 
   const [lat, lng] = useUrlPosition();

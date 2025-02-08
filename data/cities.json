@@ -119,6 +119,66 @@
         "lng": "-75.68474365712629"
       },
       "id": 12
+    },
+    {
+      "cityName": "Aralik",
+      "date": "2025-02-08T17:03:54.700Z",
+      "notes": "",
+      "emoji": "🇹🇷",
+      "country": "Turkiye",
+      "position": {
+        "lat": "39.83718049390435",
+        "lng": "44.55479501798932"
+      },
+      "id": 13
+    },
+    {
+      "cityName": "Darende",
+      "date": "2025-02-08T17:03:56.903Z",
+      "notes": "",
+      "emoji": "🇹🇷",
+      "country": "Turkiye",
+      "position": {
+        "lat": "38.43723584466073",
+        "lng": "37.36898927426456"
+      },
+      "id": 14
+    },
+    {
+      "cityName": "Qarah Aghaj Bazar",
+      "date": "2025-02-08T17:05:04.769Z",
+      "notes": "",
+      "emoji": "🇮🇷",
+      "country": "Iran (Islamic Republic of)",
+      "position": {
+        "lat": "37.31166402750781",
+        "lng": "46.92747891587392"
+      },
+      "id": 15
+    },
+    {
+      "cityName": "Mahabad",
+      "date": "2025-02-08T17:05:39.315Z",
+      "notes": "",
+      "emoji": "🇮🇷",
+      "country": "Iran (Islamic Republic of)",
+      "position": {
+        "lat": "36.82044692336602",
+        "lng": "45.828713629974146"
+      },
+      "id": 16
+    },
+    {
+      "cityName": "As Sukhnah",
+      "date": "2025-02-08T17:05:43.711Z",
+      "notes": "",
+      "emoji": "🇸🇾",
+      "country": "Syrian Arab Republic (the)",
+      "position": {
+        "lat": "35.147625200996885",
+        "lng": "38.3357490567126"
+      },
+      "id": 17
     }
   ]
 }
