@@ -17,9 +17,7 @@ export default function Login() {
   useEffect(() => {
     console.log("isAuthenticated:", isAuthenticated);
     if (isAuthenticated) {
-      setTimeout(() => {
-        navigate("/app", { replace: true });
-      }, 500); // Adding a short delay to ensure everything has settled
+      navigate("/app", { replace: true });
     }
   }, [isAuthenticated, navigate]);
 
