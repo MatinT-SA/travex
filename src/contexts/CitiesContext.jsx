@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useReducer } from "react";
 
 const CitiesContext = createContext();
 
-const BASE_URL = "https://travex-app.netlify.app/.netlify/functions";
+const BASE_URL = "http://localhost:8000";
 
 const initialState = {
   cities: [],
