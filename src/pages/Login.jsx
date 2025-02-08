@@ -19,7 +19,7 @@ export default function Login() {
     if (isAuthenticated) {
       setTimeout(() => {
         navigate("/app", { replace: true });
-      }, 100); // Adding a short delay to ensure everything has settled
+      }, 500); // Adding a short delay to ensure everything has settled
     }
   }, [isAuthenticated, navigate]);
 
