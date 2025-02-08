@@ -23,21 +23,42 @@ export default function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (email && password) login(email, password);
-    toast.success("Successful Login", {
-      position: "top-center",
-      autoClose: 2000,
-      hideProgressBar: true,
-      closeOnClick: false,
-      pauseOnHover: false,
-      draggable: false,
-      progress: undefined,
-      theme: "colored",
-      transition: Zoom,
-      style: {
-        fontSize: "1.8rem",
-      },
-    });
+
+    if (email && password) {
+      const success = login(email, password);
+
+      if (success) {
+        toast.success("Successful Login", {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: true,
+          closeOnClick: false,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+          theme: "colored",
+          transition: Zoom,
+          style: {
+            fontSize: "1.8rem",
+          },
+        });
+      } else {
+        toast.error("Invalid email or password", {
+          position: "top-center",
+          autoClose: 2000,
+          hideProgressBar: true,
+          closeOnClick: false,
+          pauseOnHover: false,
+          draggable: false,
+          progress: undefined,
+          theme: "colored",
+          transition: Zoom,
+          style: {
+            fontSize: "1.8rem",
+          },
+        });
+      }
+    }
   }
 
   return (
