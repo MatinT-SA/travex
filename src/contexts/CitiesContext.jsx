@@ -73,11 +73,14 @@ function CitiesProvider({ children }) {
       try {
         const res = await fetch(`${BASE_URL}/cities`);
         const data = await res.json();
-        dispatch({ type: "cities/loaded", payload: data });
+        if (!data || !data.cities) {
+          throw new Error("No cities found in response");
+        }
+        dispatch({ type: "cities/loaded", payload: data.cities });
       } catch (error) {
         dispatch({
           type: "rejected",
-          payload: "Something went wrong loading the cities",
+          payload: `Error fetching cities: ${error.message}`,
         });
       }
     }

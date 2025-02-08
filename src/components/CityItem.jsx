@@ -51,6 +51,8 @@ const CityItem = ({ city, isNew }) => {
     setShowConfirmation(false);
   }
 
+  if (!city || !city.position) return null;
+
   return (
     <li className={animationClass}>
       <Link

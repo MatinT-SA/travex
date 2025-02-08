@@ -37,6 +37,8 @@ const Map = () => {
       setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
   }, [geolocationPosition]);
 
+  if (!cities || cities.length === 0) return null;
+
   return (
     <div className={styles.mapContainer}>
       <Button type="position" onClick={getPosition}>
@@ -52,16 +54,22 @@ const Map = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         />
-        {cities.map((city) => (
-          <Marker
-            position={[city.position.lat, city.position.lng]}
-            key={city.id}
-          >
-            <Popup>
-              <span>{city.emoji}</span> <span>{city.cityName}</span>
-            </Popup>
-          </Marker>
-        ))}
+        {cities.map((city) => {
+          if (!city.position || !city.position.lat || !city.position.lng) {
+            return null; // Or you can return a placeholder if you want to indicate missing data
+          }
+
+          return (
+            <Marker
+              position={[city.position.lat, city.position.lng]}
+              key={city.id}
+            >
+              <Popup>
+                <span>{city.emoji}</span> <span>{city.cityName}</span>
+              </Popup>
+            </Marker>
+          );
+        })}
 
         <ChangeCenter position={mapPosition} />
         <DetectClick />
