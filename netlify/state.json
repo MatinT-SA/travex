@@ -1,0 +1,21 @@
+{
+	"siteId": "ac43d326-f618-4bd4-98dc-7b775d20f53a",
+	"geolocation": {
+		"data": {
+			"city": "Châteauneuf-les-Martigues",
+			"country": {
+				"code": "FR",
+				"name": "France"
+			},
+			"subdivision": {
+				"code": "PAC",
+				"name": "Provence-Alpes-Côte d'Azur"
+			},
+			"timezone": "Europe/Paris",
+			"latitude": 43.379,
+			"longitude": 5.159,
+			"postalCode": "13220"
+		},
+		"timestamp": 1739026742340
+	}
+}
