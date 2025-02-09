@@ -13,7 +13,10 @@ const middlewares = jsonServer.defaults();
 
 // Enable CORS
 server.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*"); // Allow all origins (or change to specific domain like 'https://your-domain.com')
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://travex-application.vercel.app"
+  ); // Allow all origins (or change to specific domain like 'https://your-domain.com')
   res.setHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, OPTIONS"); // Allow necessary methods
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); // Allow Content-Type and Authorization headers
   res.setHeader("Access-Control-Allow-Credentials", "true"); // Allow credentials (optional, if your API needs it)
