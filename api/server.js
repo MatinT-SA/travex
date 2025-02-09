@@ -8,7 +8,9 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const server = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, "../data/cities.json"));
+const router = jsonServer.router(
+  path.join(__dirname, "../../data/cities.json")
+);
 const middlewares = jsonServer.defaults();
 
 // Enable CORS
