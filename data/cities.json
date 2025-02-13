@@ -1,3 +1,112 @@
 {
-  "cities": []
+  "cities": [
+    {
+      "cityName": "Karaj",
+      "date": "2025-02-22T17:24:40.000Z",
+      "notes": "My Hometown",
+      "emoji": "🇮🇷",
+      "country": "Iran (Islamic Republic of)",
+      "position": {
+        "lat": "35.812467814970134",
+        "lng": "50.99169079801172"
+      },
+      "id": 1
+    },
+    {
+      "cityName": "Paris",
+      "date": "2025-02-13T17:24:51.911Z",
+      "notes": "",
+      "emoji": "🇫🇷",
+      "country": "France",
+      "position": {
+        "lat": "48.8531498502818",
+        "lng": "2.3661475403007692"
+      },
+      "id": 2
+    },
+    {
+      "cityName": "Madrid",
+      "date": "2025-02-13T17:25:00.357Z",
+      "notes": "",
+      "emoji": "🇪🇸",
+      "country": "Spain",
+      "position": {
+        "lat": "40.359939848767986",
+        "lng": "-3.7417339928936526"
+      },
+      "id": 3
+    },
+    {
+      "cityName": "Tighedouine",
+      "date": "2025-02-13T17:25:06.481Z",
+      "notes": "",
+      "emoji": "🇲🇦",
+      "country": "Morocco",
+      "position": {
+        "lat": "31.368646993269312",
+        "lng": "-7.564997376137614"
+      },
+      "id": 4
+    },
+    {
+      "cityName": "Washington",
+      "date": "2025-02-13T17:25:15.149Z",
+      "notes": "",
+      "emoji": "🇺🇸",
+      "country": "United States of America (the)",
+      "position": {
+        "lat": "38.8893225928405",
+        "lng": "-77.05052496272948"
+      },
+      "id": 5
+    },
+    {
+      "cityName": "Kinston",
+      "date": "2025-02-13T17:25:19.900Z",
+      "notes": "",
+      "emoji": "🇺🇸",
+      "country": "United States of America (the)",
+      "position": {
+        "lat": "35.270737867426604",
+        "lng": "-77.54479315176266"
+      },
+      "id": 6
+    },
+    {
+      "cityName": "Vera",
+      "date": "2025-02-13T17:25:42.432Z",
+      "notes": "",
+      "emoji": "🇧🇷",
+      "country": "Brazil",
+      "position": {
+        "lat": "-12.314242454048253",
+        "lng": "-55.56615197710467"
+      },
+      "id": 9
+    },
+    {
+      "cityName": "Tinguipaya",
+      "date": "2025-02-13T17:25:45.582Z",
+      "notes": "",
+      "emoji": "🇧🇴",
+      "country": "Bolivia (Plurinational State of)",
+      "position": {
+        "lat": "-19.07873118532053",
+        "lng": "-65.94173922482544"
+      },
+      "id": 10
+    },
+    {
+      "cityName": "Buenos Aires",
+      "date": "2025-02-13T17:25:48.806Z",
+      "notes": "",
+      "emoji": "🇦🇷",
+      "country": "Argentina",
+      "position": {
+        "lat": "-34.9003487944416",
+        "lng": "-58.38170416423576"
+      },
+      "id": 11
+    }
+  ]
 }
