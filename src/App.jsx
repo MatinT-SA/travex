@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
 
 import Product from "./pages/Product";
 import Pricing from "./pages/Pricing";
@@ -15,8 +16,13 @@ import Form from "./components/Form";
 import { CitiesProvider } from "./contexts/CitiesContext";
 import { AuthProvider } from "./contexts/AuthContext";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    polyfillCountryFlagEmojis();
+  }, []);
+
   return (
     <AuthProvider>
       <CitiesProvider>
