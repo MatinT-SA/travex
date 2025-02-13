@@ -16,7 +16,7 @@ import { useUrlPosition } from "../hooks/useUrlPosition";
 import User from "./User";
 
 const Map = () => {
-  const { cities } = useCities();
+  const { cities = [] } = useCities();
   const [mapPosition, setMapPosition] = useState([35.812753, 50.946075]);
   const {
     isLoading: isLoadingPosition,
@@ -52,16 +52,18 @@ const Map = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         />
-        {cities.map((city) => (
-          <Marker
-            position={[city.position.lat, city.position.lng]}
-            key={city.id}
-          >
-            <Popup>
-              <span>{city.emoji}</span> <span>{city.cityName}</span>
-            </Popup>
-          </Marker>
-        ))}
+        {cities.length > 0 &&
+          cities.map((city) => (
+            <Marker
+              position={[city.position?.lat ?? 0, city.position?.lng ?? 0]}
+              key={city.date}
+            >
+              <Popup>
+                <span>{city.emoji ?? "🏙️"}</span>{" "}
+                <span>{city.cityName ?? "Unknown City"}</span>
+              </Popup>
+            </Marker>
+          ))}
 
         <ChangeCenter position={mapPosition} />
         <DetectClick />

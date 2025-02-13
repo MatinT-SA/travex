@@ -4,12 +4,20 @@ import { Link } from "react-router-dom";
 import { Flip, toast } from "react-toastify";
 import { useCities } from "../contexts/CitiesContext";
 
-const formatDate = (date) =>
-  new Intl.DateTimeFormat("en", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  }).format(new Date(date));
+const formatDate = (date) => {
+  try {
+    const parsedDate = new Date(date);
+    if (isNaN(parsedDate)) throw new Error("Invalid date");
+
+    return new Intl.DateTimeFormat("en", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    }).format(parsedDate);
+  } catch (error) {
+    return "Invalid date";
+  }
+};
 
 const CityItem = ({ city, isNew }) => {
   const { currentCity, deleteCity } = useCities();
@@ -57,7 +65,7 @@ const CityItem = ({ city, isNew }) => {
         className={`${styles.cityItem} ${
           id === currentCity.id ? styles["cityItem--active"] : ""
         }`}
-        to={`${id}?lat=${position.lat}&lng=${position.lng}`}
+        to={`${id}?lat=${position?.lat ?? ""}&lng=${position?.lng ?? ""}`}
       >
         <span className={styles.emoji}>{emoji}</span>
         <h3 className={styles.name}>{cityName}</h3>

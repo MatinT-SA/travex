@@ -9,7 +9,7 @@ const initialState = {
 
 const USER_TEST = {
   name: "Matin",
-  email: "Matin@example.com",
+  email: "Matin@gmail.com",
   password: "wimbledon",
   avatar: "https://i.pravatar.cc/100?u=ak",
 };

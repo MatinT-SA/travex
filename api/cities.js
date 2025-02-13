@@ -36,7 +36,6 @@ export default function handler(req, res) {
       res.status(405).json({ error: "Method not allowed" });
     }
   } catch (error) {
-    console.error("Error reading cities.json:", error);
     res.status(500).json({ error: "Failed to load cities data" });
   }
 }

@@ -11,7 +11,7 @@ export default function Login() {
   const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("Matin@example.com");
+  const [email, setEmail] = useState("Matin@gmail.com");
   const [password, setPassword] = useState("wimbledon");
 
   useEffect(() => {
@@ -72,6 +72,7 @@ export default function Login() {
             id="email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
+            autoComplete="off"
           />
         </div>
 
