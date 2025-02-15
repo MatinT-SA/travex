@@ -10,7 +10,6 @@
 - [Usage](#usage)
 - [Live Demo](#live-demo)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 Travex is an interactive travel planning web app, fully responsive, built with **React + Vite**. It allows users to select and mark places they have traveled to using API calls. The app integrates various tools and libraries to provide a seamless and intuitive experience.
@@ -66,9 +65,6 @@ Contributions are welcome! If you'd like to contribute:
 3. Commit your changes (`git commit -m "Added a new feature"`)
 4. Push to your branch (`git push origin feature-branch`)
 5. Open a Pull Request
-
-## License
-This project is open-source and available under the **MIT License**.
 
 ---
 **Note:** If the API does not load, please connect to a **VPN** as some services may be restricted in certain regions.
